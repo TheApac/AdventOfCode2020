@@ -1,0 +1,1 @@
+print(len([x for x in open('input.txt', 'r').read().split('\n\n') if x.count(':') >=7 and len([ele for ele in ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'] if (ele in x)]) >=7]))
